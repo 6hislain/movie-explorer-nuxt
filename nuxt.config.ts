@@ -12,4 +12,11 @@ export default defineNuxtConfig({
     },
   ],
   vite: { vue: { template: { transformAssetUrls } } },
+  runtimeConfig: {
+    public: {
+      API_URL: process.env.API_URL,
+      API_KEY: process.env.API_KEY,
+      API_HOST: process.env.API_HOST,
+    },
+  },
 });

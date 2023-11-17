@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <Header />
-    <v-container class="mt-16"><slot /></v-container>
+    <v-container class="mt-14"><slot /></v-container>
+    <Footer />
   </v-app>
 </template>
