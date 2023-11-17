@@ -76,8 +76,8 @@ const items = ref(
     (a: { primaryImage: { url: string } }) => a?.primaryImage?.url
   )
 );
-const title1 = items.value[parseInt((Math.random() * 10) as unknown as string)];
-const title2 = items.value[parseInt((Math.random() * 10) as unknown as string)];
-const title3 = items.value[parseInt((Math.random() * 10) as unknown as string)];
-const title4 = items.value[parseInt((Math.random() * 10) as unknown as string)];
+const title1 = items.value[11];
+const title2 = items.value[7];
+const title3 = items.value[5];
+const title4 = items.value[3];
 </script>
