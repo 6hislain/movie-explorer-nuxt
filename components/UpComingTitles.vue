@@ -7,11 +7,11 @@
             <v-img
               class="align-end text-white"
               height="180"
-              :src="title1?.primaryImage?.url"
+              :src="items[11]?.primaryImage?.url"
               cover
             >
             </v-img>
-            <v-card-text>{{ title1?.titleText?.text }}</v-card-text>
+            <v-card-text>{{ items[11]?.titleText?.text }}</v-card-text>
           </v-card>
         </v-col>
         <v-col cols="12">
@@ -19,11 +19,11 @@
             <v-img
               class="align-end text-white"
               height="180"
-              :src="title2?.primaryImage?.url"
+              :src="items[7]?.primaryImage?.url"
               cover
             >
             </v-img>
-            <v-card-text>{{ title2?.titleText?.text }}</v-card-text>
+            <v-card-text>{{ items[7]?.titleText?.text }}</v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -45,11 +45,11 @@
             <v-img
               class="align-end text-white"
               height="180"
-              :src="title3?.primaryImage?.url"
+              :src="items[3]?.primaryImage?.url"
               cover
             >
             </v-img>
-            <v-card-text>{{ title3?.titleText?.text }}</v-card-text>
+            <v-card-text>{{ items[3]?.titleText?.text }}</v-card-text>
           </v-card>
         </v-col>
         <v-col cols="12">
@@ -57,11 +57,11 @@
             <v-img
               class="align-end text-white"
               height="180"
-              :src="title4?.primaryImage?.url"
+              :src="items[5]?.primaryImage?.url"
               cover
             >
             </v-img>
-            <v-card-text>{{ title4?.titleText?.text }}</v-card-text>
+            <v-card-text>{{ items[5]?.titleText?.text }}</v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -76,8 +76,4 @@ const items = ref(
     (a: { primaryImage: { url: string } }) => a?.primaryImage?.url
   )
 );
-const title1 = items.value[11];
-const title2 = items.value[7];
-const title3 = items.value[5];
-const title4 = items.value[3];
 </script>
