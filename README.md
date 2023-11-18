@@ -18,6 +18,7 @@ Welcome to our Movie Explorer project developed using Nuxt.js! This GitHub repos
 - rename .env.example to .env
 - edit .env to set your movie database api keys
 - npm run generate
+- npm run preview
 
 ## TODO
 

@@ -1,7 +1,7 @@
 <template>
   <v-row no-gutters>
     <v-col md="12"><Genres :genres="genresRequest.data" /></v-col>
-    <!-- <v-col md="12"><UpComingTitles :titles="upcomingRequest.data" /></v-col> -->
+    <v-col md="12"><UpComingTitles :titles="upcomingRequest.data" /></v-col>
     <v-col md="12">
       <h4 class="text-h4 my-3">Movies</h4>
       <RandomTitles :titles="randomRequest.data" />
