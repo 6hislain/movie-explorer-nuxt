@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="12" md="3" v-if="items.length > 11">
+    <v-col cols="12" md="3" v-if="items?.length > 11">
       <v-row>
         <v-col cols="12">
           <v-card>
@@ -38,7 +38,7 @@
         ></v-carousel-item>
       </v-carousel>
     </v-col>
-    <v-col cols="12" md="3" v-if="items.length > 11">
+    <v-col cols="12" md="3" v-if="items?.length > 11">
       <v-row>
         <v-col cols="12">
           <v-card>
