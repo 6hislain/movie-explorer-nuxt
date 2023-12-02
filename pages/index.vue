@@ -30,7 +30,7 @@ const upcomingRequest = await useFetch(
 );
 const randomRequest = await useFetch(
   runtimeConfig.public.API_URL + "/titles/random",
-  { headers, query: { limit: 20, list: "most_pop_movies" } }
+  { headers, query: { limit: 20, list: "top_boxoffice_200" } }
 );
 const randomSeriesRequest = await useFetch(
   runtimeConfig.public.API_URL + "/titles/random",
