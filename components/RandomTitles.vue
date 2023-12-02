@@ -6,10 +6,15 @@
           class="align-end text-white"
           height="180"
           :src="item?.primaryImage?.url"
+          :alt="item?.primaryImage?.caption?.plainText"
           cover
         >
         </v-img>
-        <v-card-text>{{ item?.titleText?.text }}</v-card-text>
+        <v-card-text>
+          <NuxtLink :to="'/titles/' + item?.id" class="plain-text">
+            {{ item?.titleText?.text }}
+          </NuxtLink>
+        </v-card-text>
       </v-card>
     </v-col>
   </v-row>
@@ -23,3 +28,9 @@ const items = ref(
   )
 );
 </script>
+
+<style scoped>
+.plain-text {
+  text-decoration: none;
+}
+</style>

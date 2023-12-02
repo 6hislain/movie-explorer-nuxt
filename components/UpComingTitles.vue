@@ -11,7 +11,11 @@
               cover
             >
             </v-img>
-            <v-card-text>{{ items[11]?.titleText?.text }}</v-card-text>
+            <v-card-text>
+              <NuxtLink :to="'/titles/' + items[11]?.id" class="plain-text">
+                {{ items[11]?.titleText?.text }}
+              </NuxtLink>
+            </v-card-text>
           </v-card>
         </v-col>
         <v-col cols="12">
@@ -23,7 +27,11 @@
               cover
             >
             </v-img>
-            <v-card-text>{{ items[7]?.titleText?.text }}</v-card-text>
+            <v-card-text>
+              <NuxtLink :to="'/titles/' + items[7]?.id" class="plain-text">
+                {{ items[7]?.titleText?.text }}
+              </NuxtLink>
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -49,7 +57,11 @@
               cover
             >
             </v-img>
-            <v-card-text>{{ items[3]?.titleText?.text }}</v-card-text>
+            <v-card-text>
+              <NuxtLink :to="'/titles/' + items[3]?.id" class="plain-text">
+                {{ items[3]?.titleText?.text }}
+              </NuxtLink>
+            </v-card-text>
           </v-card>
         </v-col>
         <v-col cols="12">
@@ -61,7 +73,11 @@
               cover
             >
             </v-img>
-            <v-card-text>{{ items[5]?.titleText?.text }}</v-card-text>
+            <v-card-text>
+              <NuxtLink :to="'/titles/' + items[5]?.id" class="plain-text">
+                {{ items[5]?.titleText?.text }}
+              </NuxtLink>
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -77,3 +93,9 @@ const items = ref(
   )
 );
 </script>
+
+<style scoped>
+.plain-text {
+  text-decoration: none;
+}
+</style>
