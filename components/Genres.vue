@@ -6,14 +6,16 @@
         :key="id"
         v-slot="{ isSelected, toggle }"
       >
-        <v-btn
-          class="my-2 mx-1"
-          :color="isSelected ? 'primary' : 'grey-lighten-2'"
-          @click="toggle"
-          rounded
-        >
-          {{ genre }}
-        </v-btn>
+        <NuxtLink :to="'/genres/' + genre">
+          <v-btn
+            class="my-2 mx-1"
+            :color="isSelected ? 'primary' : 'grey-lighten-2'"
+            @click="toggle"
+            rounded
+          >
+            {{ genre }}
+          </v-btn>
+        </NuxtLink>
       </v-slide-group-item>
     </v-slide-group>
   </v-sheet>
