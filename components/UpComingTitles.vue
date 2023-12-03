@@ -87,11 +87,7 @@
 
 <script setup lang="ts">
 const props = defineProps(["titles"]);
-const items = ref(
-  props?.titles?._value?.results?.filter(
-    (a: { primaryImage: { url: string } }) => a?.primaryImage?.url
-  )
-);
+const items = ref(props?.titles?._value?.results);
 </script>
 
 <style scoped>

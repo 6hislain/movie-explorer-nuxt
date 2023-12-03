@@ -4,7 +4,7 @@
       <v-card>
         <v-img
           class="align-end text-white"
-          height="180"
+          height="360"
           :src="item?.primaryImage?.url"
           :alt="item?.primaryImage?.caption?.plainText"
           cover
@@ -22,11 +22,7 @@
 
 <script setup lang="ts">
 const props = defineProps(["titles"]);
-const items = ref(
-  props?.titles?._value?.results?.filter(
-    (a: { primaryImage: { url: string } }) => a?.primaryImage?.url
-  )
-);
+const items = ref(props?.titles?._value?.results);
 </script>
 
 <style scoped>
