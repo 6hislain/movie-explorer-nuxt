@@ -1,18 +1,9 @@
 <template>
   <v-sheet class="mx-auto mb-2">
     <v-slide-group show-arrows>
-      <v-slide-group-item
-        v-for="(genre, id) in items"
-        :key="id"
-        v-slot="{ isSelected, toggle }"
-      >
+      <v-slide-group-item v-for="(genre, id) in items" :key="id">
         <NuxtLink :to="'/genres/' + genre">
-          <v-btn
-            class="my-2 mx-1"
-            :color="isSelected ? 'primary' : 'grey-lighten-2'"
-            @click="toggle"
-            rounded
-          >
+          <v-btn class="my-2 mx-1" color="grey-lighten-2" rounded>
             {{ genre }}
           </v-btn>
         </NuxtLink>
