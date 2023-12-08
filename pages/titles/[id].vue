@@ -1,19 +1,28 @@
 <template>
-  <v-row>
-    <v-col cols="12" md="5">
-      <v-img
-        class="align-end text-white"
-        height="600"
-        :src="title?.primaryImage?.url"
-        :alt="title?.primaryImage?.caption?.plainText"
-        cover
-      ></v-img>
-    </v-col>
-    <v-col cols="12" md="7">
-      <h1>{{ title?.titleText?.text }}</h1>
-      <h2>Released in {{ title?.releaseYear?.year }}</h2>
-    </v-col>
-  </v-row>
+  <div>
+    <Head>
+      <Title>{{ title?.titleText?.text }}</Title>
+      <Meta
+        name="description"
+        content="Welcome to our Movie Explorer project developed using Nuxt.js!"
+      />
+    </Head>
+    <v-row>
+      <v-col cols="12" md="5">
+        <v-img
+          class="align-end text-white"
+          height="600"
+          :src="title?.primaryImage?.url"
+          :alt="title?.primaryImage?.caption?.plainText"
+          cover
+        ></v-img>
+      </v-col>
+      <v-col cols="12" md="7">
+        <h1>{{ title?.titleText?.text }}</h1>
+        <h2>Released in {{ title?.releaseYear?.year }}</h2>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script setup lang="ts">
