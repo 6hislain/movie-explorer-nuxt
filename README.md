@@ -22,7 +22,7 @@ Welcome to our Movie Explorer project developed using Nuxt.js! This GitHub repos
 
 ## TODO
 
-- [ ] actors
-- [ ] genres
-- [ ] list
-- [ ] titles
+- [ ] search
+- [ ] actor
+- [ ] title: ratings, aka
+    - [ ] connect to IMDB api, get plot & more details
