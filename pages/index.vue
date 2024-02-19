@@ -32,19 +32,19 @@ const headers = {
 };
 
 const genresRequest = await useFetch(
-  runtimeConfig.public.API_URL + "/titles/utils/genres",
+  "https://" + runtimeConfig.public.API_HOST + "/titles/utils/genres",
   { headers }
 );
 const boxOfficeRequest = await useFetch(
-  runtimeConfig.public.API_URL + "/titles/random",
+  "https://" + runtimeConfig.public.API_HOST + "/titles/random",
   { headers, query: { limit: 10, list: "top_boxoffice_last_weekend_10" } }
 );
 const movieRequest = await useFetch(
-  runtimeConfig.public.API_URL + "/titles/random",
+  "https://" + runtimeConfig.public.API_HOST + "/titles/random",
   { headers, query: { limit: 20, list: "top_boxoffice_200" } }
 );
 const seriesRequest = await useFetch(
-  runtimeConfig.public.API_URL + "/titles/random",
+  "https://" + runtimeConfig.public.API_HOST + "/titles/random",
   { headers, query: { limit: 20, list: "top_rated_series_250" } }
 );
 </script>

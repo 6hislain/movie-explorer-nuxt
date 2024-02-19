@@ -42,10 +42,13 @@ const headers = {
   "X-RapidAPI-Host": runtimeConfig.public.API_HOST,
 };
 
-const titleRequest = await useFetch(runtimeConfig.public.API_URL + "/titles", {
-  headers,
-  query: { limit: 50, genre: route.params.id },
-});
+const titleRequest = await useFetch(
+  "https://" + runtimeConfig.public.API_HOST + "/titles",
+  {
+    headers,
+    query: { limit: 50, genre: route.params.id },
+  }
+);
 
 const items = ref((titleRequest as TitleProps)?.data?._value?.results);
 </script>
