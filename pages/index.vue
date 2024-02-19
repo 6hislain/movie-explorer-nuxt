@@ -9,9 +9,9 @@
     </Head>
     <v-row no-gutters>
       <v-col cols="12"><Genres :genres="genresRequest.data" /></v-col>
-      <v-col cols="12"
-        ><BoxOfficeTitles :titles="boxOfficeRequest.data"
-      /></v-col>
+      <v-col cols="12">
+        <BoxOfficeTitles :titles="boxOfficeRequest.data" />
+      </v-col>
       <v-col cols="12">
         <h4 class="text-h4 my-3">Movies</h4>
         <GroupedTitles :titles="movieRequest.data" />
