@@ -35,7 +35,7 @@ const icons = ref([
 
 <style scoped>
 .my-link {
-  color: whitesmoke;
+  color: #4db6ac;
   text-decoration: none !important;
 }
 </style>
