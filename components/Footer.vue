@@ -15,7 +15,11 @@
       ></v-btn>
     </div>
     <div class="px-4 py-2 bg-grey-darken-4 text-center w-100">
-      {{ new Date().getFullYear() }} — <strong>Movie Explorer</strong>
+      <v-icon icon="mdi-xml"></v-icon> with
+      <v-icon icon="mdi-heart" color="red-darken-2"></v-icon> by
+      <a class="my-link" target="_blank" href="https://bio.link/6hislain">
+        @6hislain
+      </a>
     </div>
   </v-footer>
 </template>
@@ -28,3 +32,10 @@ const icons = ref([
   "mdi-instagram",
 ]);
 </script>
+
+<style scoped>
+.my-link {
+  color: whitesmoke;
+  text-decoration: none !important;
+}
+</style>
